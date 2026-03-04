@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mm_bg"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal" >
+    <TextView
+        android:id="@+id/appName"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:alpha="0.8"
+        android:text="@string/app_name"
+        android:elevation="20dp"/>
+    <ListView
+        android:id="@+id/listViewSongs"
+        android:layout_below="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
